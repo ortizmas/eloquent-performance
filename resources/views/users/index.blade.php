@@ -1,7 +1,7 @@
 <x-app-layout>
     <x-slot name="header">
         <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-            {{ __('Users') }}
+            {{ __('Posts') }}
         </h2>
     </x-slot>
 
@@ -21,7 +21,7 @@
                                     <span class="text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">Name</span>
                                 </th>
                                 <th class="px-6 py-3 bg-gray-50 text-left">
-                                    <span class="text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">Posts</span>
+                                    <span class="text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">POsts</span>
                                 </th>
                             </tr>
                             </thead>
@@ -36,7 +36,7 @@
                                         {{ $user->name }}
                                     </td>
                                     <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-900">
-                                        {{ $user->posts()->count() }}
+                                        {{ $user->posts_count}}
                                     </td>
                                 </tr>
                             @endforeach

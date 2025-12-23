@@ -8,6 +8,7 @@ Route::get('/', function () {
 });
 
 Route::get('/posts', [\App\Http\Controllers\PostController::class, 'index'])->name('home');
+Route::get('/users', [\App\Http\Controllers\UserController::class, 'index'])->name('users.index');
 
 Route::get('/dashboard', function () {
     return view('dashboard');
